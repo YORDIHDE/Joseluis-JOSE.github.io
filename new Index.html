@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Figuras 3D Pokémon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #ca0d0d;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+    }
+    nav ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav li {
+      position: relative;
+    }
+    nav > ol > li {
+      margin-right: 20px;
+    }
+    nav li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+    }
+    nav li a:hover {
+      background-color: #434343;
+    }
+    /* Submenú */
+    nav li ul {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-width: 150px;
+      top: 100%;
+    }
+    nav li:hover > ul {
+      display: block;
+    }
+    nav li ul li {
+      position: relative;
+    }
+    nav li ul li a {
+      padding: 10px;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    footer {
+      background-color: #ca0d0d;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Figuras 3D Pokémon</h1>
+    <nav>
+      <ol>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="Acercade.html">Acerca de</a></li>
+        <li><a href="Servicios.jpg">Servicios</a>
+          <ul>
+            <li><a href="talleres.html">Talleres Creativos</a></li>
+            <li><a href="personalizacion.html">Personalización de Juguetes</a></li>
+            <li><a href="asesoria.html">Asesoría para Proyectos</a></li>
+            <li><a href="eventos.html">Eventos Sostenibles</a></li>
+          </ul>
+        </li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Bienvenido a Figuras 3D Pokémon</h2>
+    <p>Descubre nuestras figuras de Pokémon en 3D: diseños coloridos, listos para imprimir y ensamblar.</p>
+    <img src="pokemoninicio.jpg" alt="Figuras Pokémon en 3D" width="400">
+  </main>
+
+  <footer>
+    <p>Figuras 3D Pokémon BY Jose Luis Choque Chancolla &copy; 2024</p>
+  </footer>
+</body>
+</html>
