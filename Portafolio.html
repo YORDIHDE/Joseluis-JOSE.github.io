@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - Figuras 3D Pokémon</title>
- 
   <style>
     body {
       margin: 0;
@@ -12,63 +11,70 @@
       background-color: #f4f4f4;
     }
     header {
-      background-color:#ca0d0d;
+      background-color: #ca0d0d;
       color: #fff;
       padding: 10px;
       text-align: center;
     }
-    nav ol {
+    nav ul {
       list-style: none;
       padding: 0;
       margin: 0;
       text-align: center;
     }
     nav li {
-      display: inline;
+      display: inline-block;
+      position: relative;
       margin-right: 20px;
     }
     nav a {
       text-decoration: none;
-      color: #10f0b1;
-      font-size: 16px;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #333;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
     nav a:hover {
-      text-decoration: underline;
+      background-color: #3498db;
+      transform: scale(1.1);
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      border-radius: 8px;
+      padding: 10px 0;
+    }
+    .submenu li {
+      display: block;
+      margin: 0;
+    }
+    .submenu img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      vertical-align: middle;
+      border-radius: 5px;
+    }
+    .submenu a {
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+    .submenu a:hover {
+      background-color: #10f0b1;
+    }
+    nav li:hover .submenu {
+      display: block;
     }
     main {
       padding: 20px;
       text-align: center;
-    }
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .card {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 200px;
-      text-align: center;
-      padding: 20px;
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .card h3 {
-      margin: 10px 0;
-      color: #ca0d0d;
-    }
-    .card p {
-      font-size: 14px;
-      color: #555;
     }
     footer {
       background-color: #ca0d0d;
@@ -83,63 +89,41 @@
   <header>
     <h1>Figuras 3D Pokémon</h1>
     <nav>
-      <ol>
+      <ul>
         <li><a href="Inicio.html">Inicio</a></li>
         <li><a href="Acercade.html">Acerca de</a></li>
         <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="Portafolio.html">Portafolio</a></li>
+        <li>
+          <a href="Portafolio.html">Portafolio</a>
+          <ul class="submenu">
+            <li>
+              <a href="Productos1.html">
+                
+                Portafolio Productos 2024
+              </a>
+            </li>
+            <li>
+              <a href="Productos2.html">
+               
+                Portafolio Productos 2023
+              </a>
+            </li>
+          </ul>
+        </li>
         <li><a href="contacto.html">Contacto</a></li>
-      </ol>
+      </ul>
     </nav>
   </header>
-  
+
   <main>
-    <h2>Portafolio de Figuras Pokémon</h2>
-    <p>Descubre algunos de nuestros modelos en 3D más populares:</p>
-
-    <div class="card-container">
-      <!-- Card 1: Pikachu -->
-      <div class="card">
-        <img src="pIKACHU.jpg" alt="Figura de Pikachu en 3D">
-        <h3>Pikachu</h3>
-        <p>Figura de Pikachu, lista para imprimir y ensamblar. Incluye detalles en las mejillas y orejas, ideal para cualquier fanático.</p>
-      </div>
-
-      <!-- Card 2: Charizard -->
-      <div class="card">
-        <img src="Charizard.jpg" alt="Figura de Charizard en 3D">
-        <h3>Charizard</h3>
-        <p>Imponente figura de Charizard en una pose de combate. Excelente para exhibir y para los amantes de los Pokémon de fuego.</p>
-      </div>
-
-      <!-- Card 3: Bulbasaur -->
-      <div class="card">
-        <img src="Bulbasaur.jpg" alt="Figura de Bulbasaur en 3D">
-        <h3>Bulbasaur</h3>
-        <p>Figura de Bulbasaur con detalles en su lomo y expresión amigable. Ideal para colecciones de iniciadores.</p>
-      </div>
-
-      <!-- Card 4: Squirtle -->
-      <div class="card">
-        <img src="Squirtle.jpg" alt="Figura de Squirtle en 3D">
-        <h3>Squirtle</h3>
-        <p>Squirtle en una pose lista para el combate. Perfecto para coleccionistas que buscan figuras de la primera generación.</p>
-      </div>
-
-      <!-- Card 5: Jigglypuff -->
-      <div class="card">
-        <img src="Jygglipuff.jpg" alt="Figura de Jigglypuff en 3D">
-        <h3>Jigglypuff</h3>
-        <p>Figura de Jigglypuff con su característico micrófono, perfecta para añadir un toque adorable a cualquier colección.</p>
-      </div>
-    </div>
-
+    <h2>Bienvenido a nuestro portafolio de Figuras 3D Pokémon</h2>
+    <p>Explora nuestros productos destacados por años.</p>
   </main>
 
   <footer>
-    <p>Figuras 3D Pokémon &copy; 2024</p>
-    <li><a href="inicio.html">Inicio</a></li>
+    <p>Figuras 3D Pokémon BY JOSELUISCHOQUECHANCOLLA &copy; 2024</p>
   </footer>
 
 </body>
 </html>
+
