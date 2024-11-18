@@ -32,23 +32,20 @@
       margin-right: 20px;
     }
     nav a {
-  text-decoration: none;
-  color: white; /* Texto blanco */
-  font-size: 16px;
-  padding: 10px 20px;
-  display: inline-block;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  border-radius: 20px; /* Borde redondeado */
-  background-color: #333; /* Fondo oscuro para el botón */
-}
-
-nav a:hover {
-  background-color: #3498db; /* Fondo azul claro al pasar el mouse */
-  transform: scale(1.1); /* Efecto de zoom */
-  color: white; /* Asegura que el texto siga siendo blanco */
-}
-
-    
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      display: inline-block;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      border-radius: 20px;
+      background-color: #333;
+    }
+    nav a:hover {
+      background-color: #3498db;
+      transform: scale(1.1);
+      color: white;
+    }
     nav .submenu {
       display: none;
       position: absolute;
@@ -120,13 +117,14 @@ nav a:hover {
             <li><a href="servicios4.html">Producción de Taps de Pokémon</a></li>
           </ul>
         </li>
-        <li><a href="Portafolio.html">Portafolio</a></li>
-         <li> <a href="Productos1.html">Portafolio Productos 2024 </a> </li>
+        <li>
+          <a href="Portafolio.html">Portafolio</a>
+          <ul class="submenu">
+            <li><a href="Productos1.html">Portafolio Productos 2024</a></li>
             <li><a href="Productos2.html">Portafolio Productos 2023</a></li>
           </ul>
+        </li>
         <li><a href="contacto.html">Contacto</a></li>
-        
-      </ul>   
       </ul>
     </nav>
   </header>
@@ -152,4 +150,5 @@ nav a:hover {
   </footer>
 </body>
 </html>
+
 
